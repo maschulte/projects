@@ -1,6 +1,6 @@
 # Projects of Marcel Schulte
 
-**This repository contains following:** 
+**This repository contains my latest projects:** 
 
 * Exploratorive Data Analysis of Forests in R Markdown
 

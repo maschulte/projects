@@ -1,4 +1,4 @@
-# Projects of Marcel Schulte
+# Projects
 
 **This repository contains my latest projects:** 
 

@@ -6,6 +6,5 @@
 
 * SQL Queries on attended football matches
 
-* Vizualisation of some of those SQL Queries with Python
 
 

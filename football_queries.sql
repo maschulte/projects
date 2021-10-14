@@ -1,5 +1,6 @@
 
-/* As one of my favorite hobbies is watching football matches especially of my favorite team SC Freiburg, I noticed that over the last few years quite a lot of attented matches has been accumulated. As there comes a lot of data together and with the fact how much I love statistics, I decided to come up with a brief data exploration with SQL about my attended matches. 
+/* As one of my favorite hobbies is watching football matches especially of my favorite team SC Freiburg, I noticed that over the last few years quite a lot of attented matches has been accumulated. <br>
+As there comes a lot of data together and with the fact how much I love statistics, I decided to come up with a brief data exploration with SQL about my attended matches. 
 */
 
 drop table games;

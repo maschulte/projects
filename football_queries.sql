@@ -1,6 +1,5 @@
 
-/* As one of my favorite hobbies is watching football matches especially of my favorite team SC Freiburg, I noticed that over the last few years quite a lot of attented matches has been accumulated.
-As there comes a lot of data together mixed with my passion for statistics, I decided to come up with a brief data exploration with SQL about my attended matches. 
+/* As one of my favorite hobbies is watching football matches especially of my favorite team SC Freiburg, I noticed that over the last few years quite a lot of attented matches has been accumulated. As there comes a lot of data together and with the fact how much I love statistics, I decided to come up with a brief data exploration with SQL about my attended matches. 
 */
 
 drop table games;
@@ -567,10 +566,11 @@ ADD attendance varchar(255) NOT NULL DEFAULT "not attended";
 
 #ALTER TABLE scfgames DROP COLUMN attendance;
 
-UPDATE scfgames, games
+/*UPDATE scfgames, games
 SET attendance = 
 CASE WHEN scfgames.date = games.date AND scfgames.home_score = games.home_score AND scfgames.away_score = games.away_score 
 THEN "attended" ELSE "not attended" END;
+*/
 
 # alternative way to count the home-/aways wins/draws
 # adding a new column for the game result
@@ -596,13 +596,9 @@ GROUP BY result;
 
 SELECT result, COUNT("A") AS total_away_win
 FROM games
-WHERE away_team = "SC Freiburg"
+WHERE away_team = "SC Freiburg" AND competition = "Bundesliga"
 GROUP BY result;
 
-SELECT result, COUNT("D") AS total_draw
-FROM games
-WHERE  home_team = "SC Freiburg" OR away_team = "SC Freiburg"
-GROUP BY result;
 
 # now counting the same for the total SC Freiburg matches
 SELECT result, COUNT("H") AS scf_home_win
@@ -615,10 +611,11 @@ FROM scfgames
 WHERE away_team = "SC Freiburg"
 GROUP BY result;
 
-SELECT result, COUNT("D") AS total_draw
-FROM scfgames
-WHERE  home_team = "SC Freiburg" OR away_team = "SC Freiburg"
-GROUP BY result;
+/* All in all from the 272 Freiburg matches in Bundesliga between 2009 and 2018 I attended 138.
+   While I was seeing 58 wins, which is round about 42% of my total games with Freiburg, the number for total wins in this time 
+   is 84 which only results in 31% matches won, given the total number of SCF matches in Bundesliga of 272.
+   When I attend a match of SCF it is therefore also less like that they loose. 35% when I attend versus 43% in total. 
+*/
 
 
 

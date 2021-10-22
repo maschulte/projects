@@ -612,10 +612,11 @@ FROM scfgames
 WHERE away_team = "SC Freiburg"
 GROUP BY result;
 
-/* All in all from the 272 Freiburg matches in Bundesliga between 2009 and 2018 I attended 138.
-   While I was seeing 58 wins, which is round about 42% of my total games with Freiburg, the number for total wins in this time 
-   is 84 which only results in 31% matches won, given the total number of SCF matches in Bundesliga of 272.
-   When I attend a match of SCF it is therefore also less like that they loose. 35% when I attend versus 43% in total. 
+/* All in all I have attended 104 Freiburg matches in Bundesliga between 2009 and 2018 from possible 272.
+   While I was seeing 37 wins, which is round about 36% of my attended games with Freiburg, the number for total wins in this time 
+   is 84 which results in 31% matches won.
+   When I attend a match of SCF it is therefore also less likely that they loose. 37% when I attend a match versus 43% in total. 
+   However I have to admit that I attended more home matches and the likelihood for a home win in general is still higher than of an away win.
 */
 
 
